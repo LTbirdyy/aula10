@@ -25,7 +25,7 @@ app.get('/', async (req, res) => {
 
 // Rota de Healthcheck exigida pelos testes de integração
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'OK' });
+  res.status(200).json({ status: 'UP' });
 });
 
 // Inicia o servidor apenas se o arquivo for executado diretamente (ex: node server.js)
